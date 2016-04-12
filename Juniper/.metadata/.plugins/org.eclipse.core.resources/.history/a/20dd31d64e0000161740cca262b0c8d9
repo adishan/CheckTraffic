@@ -86,7 +86,7 @@ function check(){
 	            console.log('Error: ' + error.message);	        
 	        },
 	    });
-	},400);
+	},1000);
 	
 	
 	function dispbytes(res){
@@ -136,7 +136,7 @@ function check(){
 						   		return (i*21.5)+5;
 						   })
 						   .attr("y", function(d) {
-							   return 195-(d/1000)-60
+							   return 200-(d/1000)-60
 						   })
 						   .attr("font-family", "sans-serif")
 						   .attr("font-size", "11px")
@@ -204,10 +204,10 @@ function check(){
 						   })
 						   .attr("text-anchor", "middle")
 						   .attr("x", function(d, i) {
-						   		return (i*21.5)+5;
+						   		return (i*21.5)+10;
 						   })
 						   .attr("y", function(d) {
-							   return 195-(d/1000)-100
+							   return 200-(d/1000)-100
 						   })
 						   .attr("font-family", "sans-serif")
 						   .attr("font-size", "11px")
@@ -250,7 +250,7 @@ function check(){
 	                      svg.selectAll("rect")
 								    .data(newbytes)
 								    .transition()
-								    .duration(0)
+								    .duration(50)
 		                            .attr("x", function(d,i){
 		                	 return (i*21);
 		                 })
@@ -268,10 +268,10 @@ function check(){
 						   		return Math.round(d/1000);
 						   })
 						   .attr("x", function(d, i) {
-						   		return (i*21.5)+5;
+						   		return i*21.5;
 						   })
 						   .attr("y", function(d) {
-							   return 195-(d/1000)-60
+							   return 200-(d/1000)-60
 						   });
 	}
 	
@@ -297,7 +297,7 @@ function repeatY(res){
 	                      svg2.selectAll("rect")
 								    .data(newpacks)
 								    .transition()
-								    .duration(0)
+								    .duration(50)
 		                            .attr("x", function(d,i){
 		                	 return (i*21)+10;
 		                 })
@@ -315,10 +315,10 @@ function repeatY(res){
 						   		return Math.round(d/1000);
 						   })						 
 						   .attr("x", function(d, i) {
-						   		return (i*21.5)+5;
+						   		return (i*21.5);
 						   })
 						   .attr("y", function(d) {
-							   return 195-(d/1000)-100;
+							   return 200-(d/1000)-100;
 						   })
 	}
 	}

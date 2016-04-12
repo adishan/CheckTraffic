@@ -41,23 +41,23 @@ http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
 
-mysql      = require('mysql');
-connection = mysql.createConnection({
-  host     : '127.0.0.1',
-  user     : 'root',
-  password : 'adiboy',
-  database : 'juniper',
-});
-
-connection.connect(function(err) {
-  console.log('Connected!');
-});
-  
 
 app.use(express.bodyParser());
 
 app.post('/', function(req, res){
 
+	mysql      = require('mysql');
+	connection = mysql.createConnection({
+	  host     : '127.0.0.1',
+	  user     : 'root',
+	  password : 'adiboy',
+	  database : 'juniper',
+	});
+
+	connection.connect(function(err) {
+	  console.log('Connected!');
+	});
+	  
    var src=req.body.src;
    var dest=req.body.dest;
    var day1=req.body.day1;

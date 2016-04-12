@@ -86,7 +86,7 @@ function check(){
 	            console.log('Error: ' + error.message);	        
 	        },
 	    });
-	},400);
+	},2000);
 	
 	
 	function dispbytes(res){

@@ -250,7 +250,7 @@ function check(){
 	                      svg.selectAll("rect")
 								    .data(newbytes)
 								    .transition()
-								    .duration(0)
+								    .duration(50)
 		                            .attr("x", function(d,i){
 		                	 return (i*21);
 		                 })
@@ -297,7 +297,7 @@ function repeatY(res){
 	                      svg2.selectAll("rect")
 								    .data(newpacks)
 								    .transition()
-								    .duration(0)
+								    .duration(50)
 		                            .attr("x", function(d,i){
 		                	 return (i*21)+10;
 		                 })
