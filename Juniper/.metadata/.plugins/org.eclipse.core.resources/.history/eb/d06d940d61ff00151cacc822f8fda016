@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="aditya shanbhag,web developer,aditya">
+<meta name="description"content="Contrail App">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-slider.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="clientjs/bootstrap-slider.js"></script>
+<script type="text/javascript" src="clientjs/global.js"></script>
+<title>Contrial Application</title>
+</head>
+
+<body>
+<div id="banner"></div>
+<div class="container" id="wrapper">
+<div class="form-group">
+<div id="form">
+<div class="col-md-6">
+  <label for="usr">Source:</label>
+  <input type="text" class="form-control" id="source">
+  </div>
+ <div class="col-md-6">
+  <label for="usr">Destination:</label><br>
+  <input type="text" class="form-control" id="dest"><br />
+  </div>
+  
+  <div class="row">
+  <div class="col-md-6">
+  <div class="range"><span class="from">From:</span>
+  <div class="col-md-4">
+  <label for="usr">Month:</label>
+  <input type="text" class="form-control" id="month1">
+  </div>
+  <div class="col-md-4">
+  <label for="usr">Day:</label>
+  <input type="text" class="form-control" id="day1">
+  </div>
+  <div class="col-md-4">
+  <label for="usr">Year:</label>
+  <input type="text" class="form-control" id="year1">
+  </div>
+  </div>
+  <div class="col-md-6">
+  <span class="to">To:</span></div>
+  <div class="col-md-4">
+  <label for="usr">Month:</label>
+  <input type="text" class="form-control" id="month2">
+  </div>
+  <div class="col-md-4">
+  <label for="usr">Day:</label>
+   <input type="text" class="form-control" id="day2">
+  </div>
+  <div class="col-md-4">
+  <label for="usr">Year:</label>
+  <input type="text" class="form-control" id="year2">
+  </div>
+  </div>
+  </div>
+<br/>
+<br/>
+<div class ="row">
+<div class="col-md-6">
+<div class="col-md-6">
+<label for="usr">Min. Sum of bytes:</label>
+<div id="slider" class="slider1"></div>
+</div>
+<div class="col-md-6">
+<label for="usr">Max. Sum of bytes:</label>
+<div id="slider" class="slider2"></div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="col-md-6">
+<label for="usr">Min. Sum of packets:</label>
+<div id="slider" class="slider3"></div>
+</div>
+<div class="col-md-6">
+<label for="usr">Max. Sum of packets:</label>
+<div id="slider" class="slider4"></div>
+</div>
+</div>
+</div>
+</div>
+<button type="button" class="btn btn-primary btn-lg" id="submitbtn" onclick="check()">SUBMIT</button>
+ </div>
+</div>
+</body>
+</html>

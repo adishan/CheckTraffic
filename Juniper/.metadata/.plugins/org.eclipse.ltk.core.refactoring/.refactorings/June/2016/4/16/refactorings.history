@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;June/views/Display.html&apos; to &apos;index.html&apos;" description="Rename resource &apos;Display.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="views/Display.html" name="index.html" stamp="1460256093463" updateReferences="true"/>&#x0A;<refactoring comment="Move &apos;bootstrap-slider.js, global.js&apos; to &apos;clientjs&apos;" description="Move 2 resources to &apos;clientjs&apos;" destination="public/clientjs" element1="routes/bootstrap-slider.js" element2="routes/global.js" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="2" stamp="1460265371278" updateReferences="true"/>
+</session>

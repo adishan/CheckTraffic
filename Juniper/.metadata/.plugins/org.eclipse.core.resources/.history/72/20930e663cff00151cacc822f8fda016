@@ -1,0 +1,64 @@
+
+/**
+ * Module dependencies.
+ */
+
+var express = require('express')
+  , routes = require('./routes')
+  , user = require('./routes/user')
+  , http = require('http')
+  , path = require('path')
+  ,session=require('client-sessions');
+
+var app = express();
+
+var mysql,connection;
+
+// all environments
+app.set('port', process.env.PORT || 3000);
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
+app.use(express.favicon());
+app.use(express.logger('dev'));
+app.use(express.bodyParser());
+app.use(express.methodOverride());
+app.use(app.router);
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+	  cookieName: 'session',
+	  secret: 'junipertest',
+	  duration: 30 * 60 * 1000,
+	  activeDuration: 5 * 60 * 1000,
+	}));
+
+
+app.get('/', function(req, res) {
+	 res.sendfile(__dirname + "/views/index.html"); 
+	});
+
+
+http.createServer(app).listen(app.get('port'), function(){
+  console.log('Express server listening on port ' + app.get('port'));
+});
+
+mysql      = require('mysql');
+connection = mysql.createConnection({
+  host     : '127.0.0.1',
+  user     : 'root',
+  password : 'adiboy',
+});
+
+connection.connect(function(err) {
+  console.log('Connected!');
+});
+
+
+app.post('/', function(req, res){
+	
+   app.use(express.bodyParser());
+	
+   console.log(req.body.src);
+   console.log(req.body.dest);
+});
+
+
