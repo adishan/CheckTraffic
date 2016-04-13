@@ -13,7 +13,7 @@ $(document).ready(function(){
 		max:100000,
 		step:10,
 		orientation:'horizontal',
-		value:500,
+		value:50000,
 		scale:'linear'
 	  	});
 	
@@ -28,13 +28,15 @@ $(document).ready(function(){
 	
 	$(".slider4").slider({
 		min: 1000,
-		max:100000,
+		max:200000,
 		step:100,
 		orientation:'horizontal',
-		value:1000,
+		value:100000,
 		scale:'linear'
 	    
 	});
+	$(".graphname1").hide();
+	$(".graphname2").hide();
 });
 
 var src,dest,month1,day1,year1,month2,dest2,day2,maxbytes,minbytes,maxpcks,minpcks,res;
@@ -52,7 +54,11 @@ function check(){
 	maxbytes=$('.slider2').slider("getValue");
 	minpcks=$('.slider3').slider("getValue");
 	maxpcks=$('.slider4').slider("getValue");
-	
+
+	if(((day1!="" && year1!="" && month1!="") && (day2=="" || month2=="" || year2=="")) || (day2!="" && year2!="" && month2!="") && (day1=="" || month1=="" || year1=="")){
+		alert("Please enter the complete range!"); return;}
+		
+		
 	var request='{"src": "'+src+'", "dest": "'+dest+' ", "day1": "'+day1+' ", "month1": "'+month1+' ", "year1": "'+year1+' ", "month2": "'+month2+' ", "day2": "'+day2+' ", "year2":"'+year2+' ", "minbytes": "'+minbytes+' ", "maxbytes": " '+maxbytes+'", "minpcks": " '+minpcks+'", "maxpcks": "'+maxpcks+'"}';
 	var jstr=jQuery.parseJSON(request);
 	
@@ -61,10 +67,14 @@ function check(){
         data: jstr,
         type: 'POST',
         jsonpCallback: 'callback',
+        timeout:2000,
         success: function (data) {
-           dispbytes(data);
-           dispacks(data)
-            
+        	if(data!=null){
+        		$(".graphname1").show();
+        		$(".graphname2").show();
+		        dispbytes(data);
+		        dispacks(data);
+        	}
         },
         error: function (xhr, status, error) {
             console.log('Error: ' + error.message);	        
@@ -77,6 +87,7 @@ function check(){
 	        data: jstr,
 	        type: 'POST',
 	        jsonpCallback: 'callback',
+	        timeout:2000,
 	        success: function (data) {	        
 	           repeatX(data);
 	           repeatY(data)
@@ -101,7 +112,7 @@ function check(){
 		});
 		
 		var svg=d3.select("#bargraph1").append("svg")
-		                         .attr("width",2500)
+		                         .attr("width",2000)
 		                         .attr("height",200)
 		
 		                         //code for bytes starts here
@@ -185,11 +196,11 @@ function check(){
 		                	 return (i*21)+10;
 		                 })
                          .attr("y", function(d){
-                        	 return 200-(d/1000)-100;
+                        	 return 200-(d/2000)-100;
                          })
                          .style("width",20)
 		                 .style("height",function(d){
-		                	 return d/1000+"px";
+		                	 return d/2000+"px";
 		                 })
 		                 .attr("fill", function(d) {
 		                	    return "rgb(0, 0, " + Math.round(d/500) + ")";
@@ -200,14 +211,14 @@ function check(){
 						   .enter()
 						   .append("text")
 						   .text(function(d) {
-						   		return Math.round(d/1000);
+						   		return Math.round(d/2000);
 						   })
 						   .attr("text-anchor", "middle")
 						   .attr("x", function(d, i) {
 						   		return (i*21.5)+5;
 						   })
 						   .attr("y", function(d) {
-							   return 195-(d/1000)-100
+							   return 195-(d/2000)-100
 						   })
 						   .attr("font-family", "sans-serif")
 						   .attr("font-size", "11px")
@@ -302,23 +313,23 @@ function repeatY(res){
 		                	 return (i*21)+10;
 		                 })
                          .attr("y", function(d){
-                        	 return 200-(d/1000)-100;
+                        	 return 200-(d/2000)-100;
                          })
                          .style("width",20)
 		                 .style("height",function(d){
-		                	 return d/1000+"px";
+		                	 return d/2000+"px";
 		                 });
 	                      
 	                      svg2.selectAll("text")
 						   .data(newpacks)
 						   .text(function(d) {
-						   		return Math.round(d/1000);
+						   		return Math.round(d/2000);
 						   })						 
 						   .attr("x", function(d, i) {
 						   		return (i*21.5)+5;
 						   })
 						   .attr("y", function(d) {
-							   return 195-(d/1000)-100;
+							   return 195-(d/2000)-100;
 						   })
 	}
 	}

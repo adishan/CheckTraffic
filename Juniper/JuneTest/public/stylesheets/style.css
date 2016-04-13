@@ -40,3 +40,8 @@ div#slider{
     font-family: sans-serif;
     font-size: 11px;
 }
+.graphname1,.graphname2{
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
