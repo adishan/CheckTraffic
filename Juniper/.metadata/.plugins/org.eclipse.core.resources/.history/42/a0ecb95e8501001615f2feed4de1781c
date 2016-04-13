@@ -45,6 +45,3 @@ div#slider{
 	font-size: 18px;
 	font-weight: bold;
 }
-.table-responsive td, .table-responsive th {
-    border: none;
-}

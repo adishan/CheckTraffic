@@ -112,8 +112,8 @@ function check(){
 		});
 		
 		var svg=d3.select("#bargraph1").append("svg")
-		                         .attr("width",2000)
-		                         .attr("height",200)
+		                        .attr("width",2000)
+		                        .attr("height",200)
 		
 		                         //code for bytes starts here
 		                         

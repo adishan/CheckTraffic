@@ -202,7 +202,7 @@
               <children xsi:type="advanced:Placeholder" xmi:id="_PUklygAmEeaY1OET3QJ8_A" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_PUknmgAmEeaY1OET3QJ8_A"/>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_PUklywAmEeaY1OET3QJ8_A" containerData="7500" selectedElement="_PUkl0QAmEeaY1OET3QJ8_A">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_PUklzAAmEeaY1OET3QJ8_A" containerData="6989" selectedElement="_PUklzQAmEeaY1OET3QJ8_A" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_PUklzAAmEeaY1OET3QJ8_A" containerData="6634" selectedElement="_PUklzQAmEeaY1OET3QJ8_A" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_PUklzQAmEeaY1OET3QJ8_A" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_PUknDwAmEeaY1OET3QJ8_A"/>
                 <children xsi:type="basic:PartStack" xmi:id="_PUklzgAmEeaY1OET3QJ8_A" elementId="rightTopRight" containerData="2500" selectedElement="_PUklzwAmEeaY1OET3QJ8_A">
                   <tags>newtablook</tags>
@@ -210,7 +210,7 @@
                   <children xsi:type="advanced:Placeholder" xmi:id="_PUkl0AAmEeaY1OET3QJ8_A" elementId="org.eclipse.ui.views.TaskList" ref="_PUkoBQAmEeaY1OET3QJ8_A"/>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_PUkl0QAmEeaY1OET3QJ8_A" elementId="rightBottom" containerData="3011" selectedElement="_PUkl0gAmEeaY1OET3QJ8_A">
+              <children xsi:type="basic:PartStack" xmi:id="_PUkl0QAmEeaY1OET3QJ8_A" elementId="rightBottom" containerData="3366" selectedElement="_PUkl0gAmEeaY1OET3QJ8_A">
                 <tags>newtablook</tags>
                 <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_PUkl0gAmEeaY1OET3QJ8_A" elementId="org.eclipse.ui.console.ConsoleView" ref="_PUkntAAmEeaY1OET3QJ8_A"/>
@@ -249,18 +249,18 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_PUknDwAmEeaY1OET3QJ8_A" elementId="org.eclipse.ui.editorss" selectedElement="_PUknEAAmEeaY1OET3QJ8_A">
-      <children xsi:type="basic:PartStack" xmi:id="_PUknEAAmEeaY1OET3QJ8_A" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_PUknEgAmEeaY1OET3QJ8_A">
+      <children xsi:type="basic:PartStack" xmi:id="_PUknEAAmEeaY1OET3QJ8_A" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_PUknUwAmEeaY1OET3QJ8_A">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <children xsi:type="basic:Part" xmi:id="_PUknEQAmEeaY1OET3QJ8_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="index.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.html&quot; partName=&quot;index.html&quot; title=&quot;index.html&quot; tooltip=&quot;JuneTest/views/index.html&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JuneTest/views/index.html&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3216&quot; selectionTopPixel=&quot;1267&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.html&quot; partName=&quot;index.html&quot; title=&quot;index.html&quot; tooltip=&quot;JuneTest/views/index.html&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JuneTest/views/index.html&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3206&quot; selectionTopPixel=&quot;1259&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_PUknEgAmEeaY1OET3QJ8_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="app.js" iconURI="platform:/plugin/org.nodeclipse.ui/icons/node_top_right_corner_file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.nodeclipse.ui.editors.NodeEditor&quot; name=&quot;app.js&quot; partName=&quot;app.js&quot; title=&quot;app.js&quot; tooltip=&quot;JuneTest/app.js&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JuneTest/app.js&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2547&quot; selectionTopPixel=&quot;1132&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.nodeclipse.ui.editors.NodeEditor&quot; name=&quot;app.js&quot; partName=&quot;app.js&quot; title=&quot;app.js&quot; tooltip=&quot;JuneTest/app.js&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JuneTest/app.js&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2879&quot; selectionTopPixel=&quot;1394&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.nodeclipse.ui.editors.NodeEditor</tags>
           <tags>removeOnHide</tags>
@@ -282,7 +282,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_PUknUwAmEeaY1OET3QJ8_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="global.js" iconURI="platform:/plugin/org.nodeclipse.ui/icons/node_top_right_corner_file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.nodeclipse.ui.editors.NodeEditor&quot; name=&quot;global.js&quot; partName=&quot;global.js&quot; title=&quot;global.js&quot; tooltip=&quot;JuneTest/public/clientjs/global.js&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JuneTest/public/clientjs/global.js&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2691&quot; selectionTopPixel=&quot;1207&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.nodeclipse.ui.editors.NodeEditor&quot; name=&quot;global.js&quot; partName=&quot;global.js&quot; title=&quot;global.js&quot; tooltip=&quot;JuneTest/public/clientjs/global.js&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JuneTest/public/clientjs/global.js&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1167&quot; selectionTopPixel=&quot;375&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.nodeclipse.ui.editors.NodeEditor</tags>
           <tags>removeOnHide</tags>
@@ -304,7 +304,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_PUknlAAmEeaY1OET3QJ8_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="style.css" iconURI="platform:/plugin/org.eclipse.wst.css.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;style.css&quot; partName=&quot;style.css&quot; title=&quot;style.css&quot; tooltip=&quot;JuneTest/public/stylesheets/style.css&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JuneTest/public/stylesheets/style.css&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;731&quot; selectionTopPixel=&quot;315&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;style.css&quot; partName=&quot;style.css&quot; title=&quot;style.css&quot; tooltip=&quot;JuneTest/public/stylesheets/style.css&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JuneTest/public/stylesheets/style.css&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;799&quot; selectionTopPixel=&quot;239&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.wst.css.core.csssource.source</tags>
           <tags>removeOnHide</tags>
@@ -488,7 +488,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_PUkoCQAmEeaY1OET3QJ8_A" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_UBUW1wEREeaqb6Y709iGxA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_PUt4KAAmEeaY1OET3QJ8_A"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_q-BRwAGCEeax08MAoCuXWQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_PUt4KAAmEeaY1OET3QJ8_A"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_PUkoFwAmEeaY1OET3QJ8_A" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -518,7 +518,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_PUkoWwAmEeaY1OET3QJ8_A" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_UBdgyQEREeaqb6Y709iGxA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_PUt31QAmEeaY1OET3QJ8_A"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_q-J0oAGCEeax08MAoCuXWQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_PUt31QAmEeaY1OET3QJ8_A"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_PUkoaAAmEeaY1OET3QJ8_A" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

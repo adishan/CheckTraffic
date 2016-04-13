@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-slider.css">
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="clientjs/bootstrap-slider.js"></script>
@@ -19,8 +20,10 @@
 </head>
 
 <body>
+<div id="banner"></div>
 <div class="container" id="wrapper">
 <div class="form-group">
+<div id="form">
 <div class="col-md-6">
   <label for="usr">Source:</label>
   <input type="text" class="form-control" id="source">
@@ -85,7 +88,21 @@
 </div>
 </div>
 </div>
-<button type="button" class="btn btn-primary btn-lg" id="submitbtn" onclick="check()">SUBMIT</button>
+<br /><br />
+<div class ="row">
+<button type="button" class="btn btn-primary btn-block" id="submitbtn" onclick="check()">SUBMIT</button>
+</div>
+ </div>
+ <br /><br />
+ <div class="row">
+ <div class="col-xs-12">
+ <div class="graphname1">Total Bytes/time  (in MB)</div> 
+ <div class="col-xs-6" id="bargraph1"></div>
+ <div class="graphname1">Total Packets/time  </div> 
+  <div class="col-xs-6" id="bargraph2">
+ </div>
+ </div>
+ </div>
  </div>
 </div>
 </body>
