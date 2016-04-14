@@ -20,6 +20,7 @@ Views: Client code     Routes: routing code    Public: Client scripts    app.js:
                
 Steps to use the application:
 1. Run the Traffic.java thread class. The current mock query is for source IP as : 127.0.0.2 and inserts random bytes and packets.
-2. Enter a time range/(packet/byte range) / (source/destination range) in the application and click SUBMIT. 
-3. You should now see the real-time packets and bytes streaming on screen.
-4. The application can be stopped at any time by refreshing the screen.
+2. Enter a time range/(packet/byte range) / (source/destination range) in the application (optional).
+3. Click SUBMIT. 
+4. You should now see the real-time packets and bytes streaming on screen.
+5. The application can be stopped at any time by refreshing the screen.
