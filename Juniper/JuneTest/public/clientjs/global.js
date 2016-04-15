@@ -88,10 +88,12 @@ function check(){
 	        type: 'POST',
 	        jsonpCallback: 'callback',
 	        timeout:2000,
-	        success: function (data) {	        
+	        success: function (data) {
+	        if(Object.keys(data).length >= 50){	
 	           repeatX(data);
 	           repeatY(data)
-	            
+	         }
+	        else return;
 	        },
 	        error: function (xhr, status, error) {
 	            console.log('Error: ' + error.message);	        
