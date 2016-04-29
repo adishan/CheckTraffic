@@ -1,0 +1,53 @@
+//global
+var productlist=new Array();
+	
+$(document).ready(function(){
+	//make ajax call to get item list
+	
+	$.ajax({
+		
+		    url: '/',
+	        type: 'POST',
+	        jsonpCallback: 'callback',
+	        timeout:2000,
+	        success: function (data) {
+	        	  loadlist(data);
+	        },
+	        error: function (xhr, status, error) {
+	            console.log('Error: ' + error.message);	        
+	        },
+	});
+	
+
+})
+
+function loadlist(data){
+	jQuery.each(data, function(i,val){
+		productlist.push(data[i].PNAME);
+	});
+	
+	$('#searchtext').autocomplete({
+		source: productlist
+	});
+}
+
+function searchitem(){
+	
+	var product=$("#searchtext").val();
+	var jstr='{"product":'+product+'}';
+	jstr=jQuery.parseJSON(jstr);	
+	
+	$.ajax({
+		url: '/',
+		data:jstr,
+		type: 'POST',
+		jsonpCallback: 'callback',
+        timeout:2000,
+        success: function (data) {
+        	 alert(data);
+        },
+        error: function (xhr, status, error) {
+            console.log('Error: ' + error.message);	        
+        },
+	});
+}

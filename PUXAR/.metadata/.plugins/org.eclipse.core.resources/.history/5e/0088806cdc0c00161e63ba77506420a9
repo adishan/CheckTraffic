@@ -1,0 +1,23 @@
+//global
+
+$(document).ready(function(){
+	//make ajax call to get item list
+	var productlist=new Array();
+	
+	$.ajax({
+		
+		    url: '/',
+	        type: 'POST',
+	        jsonpCallback: 'callback',
+	        timeout:2000,
+	        success: function (data) {
+	        		productlist.push(data.PNAME);
+	        		alert(data.PNAME);
+	        },
+	        error: function (xhr, status, error) {
+	            console.log('Error: ' + error.message);	        
+	        },
+	});
+	
+	
+})
